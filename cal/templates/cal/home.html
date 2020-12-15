@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    {% load static %}
+</head>
+<body>
+    <style>
+        #externa {
+        position: relative;
+        width:100%;
+        height:200px;
+        background:#E4EE91;
+        }
+        #interna {
+        left:50%;
+        top:50%;
+        margin-left:-100px; /* Metade do valor da Largura */
+        margin-top:-50px; /* Metade da valor da Altura */
+        position:absolute;
+        width:200px; /* Valor da Largura */
+        height:100px; /* Valor da Altura */
+        color:#343837;
+        }
+        body{
+            background-color: #9DBCD4;
+        }
+    </style>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1" " >Reserve seu horário aqui:</span>
+        </div>
+    </nav>
+    <div class="col-md-12 fundo" align="center" >
+        <p>
+        <b>    
+        <font size="120" face="Arial" style="color: #1F3B4D;">
+            CHAVES
+        </font>
+        </b>
+        </p>
+    </div>
+    <div class="col-md-12 fundo" align="center"id="interna" >
+        <a href="{% url 'cal:calendar' %}"> <button type="button" class="btn btn-primary" style="background-color: #364f6b;">Calendário</button></a>
+        
+            
+                
+    </div>
+</body>
+</html>
